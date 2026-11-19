@@ -33,11 +33,10 @@ A one-page summary with charts is in [`Retail_Sales_Findings.pdf`](Retail_Sales_
 ```
 SQL_Retail_Sales/
 ├── README.md
-├── SQL_Query.sql               (full script: setup, cleaning, data checks, 15 questions)
-└── Retail_Sales_Findings.pdf   (one-page summary with charts)
+├── Retail_Sales_Findings.pdf              (one-page summary with charts)
+├── SQL - Retail Sales Analysis_utf.csv    (The dataset as a csv file)
+└── SQL_Query.sql                          (full script: setup, cleaning, data checks, 15 questions)
 ```
-
-The dataset (`retail_sales.csv`) is provided by the tutorial creator in the video description, so it is not re-hosted here.
 
 To run it: create the database, run the setup section of `SQL_Query.sql`, then import the CSV into `retail_sales` using pgAdmin's Import/Export tool (or `\copy` in psql). **The dates in the CSV are in dd/mm/yyyy format**, so check a few dates after importing (the script includes a check); if they are misread, run `SET datestyle = 'DMY';` before importing. Then run the rest of the script, which covers cleaning, data quality checks and all 15 questions.
 
